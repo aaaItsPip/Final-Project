@@ -39,7 +39,7 @@
     <!-- my css -->
     <link rel="stylesheet" href="stylesheet.css">
 
-    <title>HHH</title>
+    <title>Website Template - Grid Templates</title>
 </head>
 
 <body>
@@ -55,7 +55,7 @@
             <h1>Website Template</h1>
             <nav class="topnav" id="myTopnav">
                 <a href="index.html">Home</a>
-                <a href="backdrops.html">Backdrops</a>
+                <a href="grid-template.html">Grid templates</a>
                 <a href="props.html">Props</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
@@ -85,6 +85,154 @@
 
         <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
+          GRID LAYOUT FOR PORTFOLIO WORK - PORTRAIT FORMAT
+    
+        = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+        <h2 class="grid-heading">Portrait Grid</h2>
+        <section class="portrait__grid">
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/dune.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">Dune</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/fleabag.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">Fleabag</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/great-gatsby.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">The Great Gatsby</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/lord-of-the-flies.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">Lord of the Flies</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/night-ocean.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">The Night Ocean</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/peter-and-the-wolf.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">Peter and the Wolf</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/schizoid-man.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">21st Century Schizoid Man</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/teaspoon.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">Teaspoon</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/the-bell-jar.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">The Bell Jar</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+        </section>
+
+        <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+          GRID LAYOUT FOR PORTFOLIO WORK - LANDSCAPE FORMAT
+    
+        = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+        <h2 class="grid-heading">Landscape Grid</h2>
+        <section class="landscape__grid">
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-001.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-002.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-003.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-004.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-005.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-006.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-007.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-008.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-009.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-010.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-011.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-012.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+        </section>
+
+        <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
           MASONRY LAYOUT FOR PORTFOLIO WORK - SUITABLE FOR A MIX OF PORTRAIT AND LANDSCAPE FORMAT IMAGES
     
         = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
@@ -93,6 +241,8 @@
         <section class="grid--masonry">
             <img src="images/dune.jpg" alt="Dune">
             <img src="images/image-001.jpg" alt="landscape image">
+            <img src="images/image-002.jpg" alt="landscape image">
+            <img src="images/image-003.jpg" alt="landscape image">
             <img src="images/fleabag.jpg" alt="Dune">
             <img src="images/image-005.jpg" alt="landscape image">
             <img src="images/image-008.jpg" alt="landscape image">
@@ -120,8 +270,8 @@
 
         <footer>
             <p>
-                Copyright Ehren van Strik-Taylor &copy; 2024. Copyright material on this website is protected by copyright owned by
-                Ehren van Strik-Taylor. Unless indicated otherwise for specific items or collections of content (either below or
+                Copyright Your Name &copy; 2024. Copyright material on this website is protected by copyright owned by
+                Your Name Here. Unless indicated otherwise for specific items or collections of content (either below or
                 within specific items or collections), this copyright material is licensed for re-use under the Creative
                 Commons Attribution / Share-Alike (CC BY-SA 4.0) International licence. In essence, you are free to
                 copy, distribute and adapt the material, as long as you attribute it to me and abide by the other
