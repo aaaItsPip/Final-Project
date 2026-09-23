@@ -228,6 +228,7 @@ header {
     font-weight: 400;
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    margin-left: 500px;
 }
 
 .introduction p {
@@ -235,6 +236,7 @@ header {
     font-weight: 300;
     font-size: 1rem;
     margin-bottom: 1rem;
+    margin-left: 500px;
 }
 
 .readmore-button {
@@ -421,11 +423,11 @@ header {
     .single-item {
         display: grid;
         gap: 1.5rem;
-        grid-auto-columns: 1fr;
+        grid-auto-columns: 6fr;
         grid-template-areas:
-            'single-item__image single-item__h2'
-            'single-item__image single-item__h3'
-            'single-item__image single-item__introduction'
+            'single-item__h2 single-item__image'
+            'single-item__h3 single-item__image'
+            'single-item__introduction single-item__image'
             'single-item__block-one single-item__block-two';
         padding-block: 2rem;
         width: min(95%, 70em);
@@ -442,7 +444,8 @@ header {
 /* For mobile device widths, containers below are stacked in a single column - max width 875px or 54.688rem */
 @media screen and (max-width: 875px) {
     .single-item {
-        grid-template-areas: 'single-item__h2'
+        grid-template-areas: 
+            'single-item__h2'
             'single-item__image'
             'single-item__h3'
             'single-item__introduction'
@@ -454,7 +457,7 @@ header {
 
 .single-item__image {
     grid-area: single-item__image;
-    width: 100%;
+    width: 120%;
     max-width: 800px;
 }
 
