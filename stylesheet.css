@@ -1,7 +1,7 @@
 /*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-  Author: Your name here
-  Date: creation date
+  Author: Ehren van Strik - Taylor
+  Date: September 2026
 
   CONTENTS:
   ________
@@ -28,23 +28,23 @@
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 :root {
-    --dark-text: #13381f;
+    --dark-text: #f6ead0;
     --light-text: #fcfcfa;
     --cream-text: #f6ead0;
-    --medium-dark-text: #055723;
-    --main-background: #F2C230;
-    --header-background: #F2E5A2;
-    --intro-background: #F29F05;
-    --dark-background: #002F15;
-    --portrait-background: #e06c10;
-    --landscape-background: #F23A29;
-    --dark-border-colour: #08331c;
-    --button-colour: #402320;
-    --dark-green: #13632e;
+    --medium-dark-text: #f6ead0;
+    --main-background: url("images/background.svg");
+    --header-background: url("images/header.png");
+    --intro-background: #f6ead0;
+    --dark-background: #f6ead0;
+    --portrait-background: url("images/button.svg");
+    --landscape-background: url("images/buttonshort.svg");
+    --dark-border-colour: #f6ead0;
+    --button-colour: #f6ead0;
+    --dark-green: #f6ead0;
     --slide-out-menu-background: rgba(233, 240, 234, 0.93);
     --footer-background: #73645C;
     --off-white: #fcfcf5;
-    --description-text: #8c8e8d;
+    --description-text: #f6ead0;
     --description-text-colour: #fcfcfa;
     --light-silver: #fcfcfa;
 }
@@ -61,9 +61,9 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: #1d1d1b;
+    color: #f6ead0;
     font-size: 1.2rem;
-    background-color: #97c8e3;
+    background-image: url("images/border.svg");
 }
 
 img {
@@ -85,7 +85,7 @@ img {
 /* This is the main content container for all pages - max width 1200px, or 75rem*/
 main {
     max-width: 1200px;
-    background-color: var(--main-background);
+    background-image: var(--main-background);
     margin: 0 auto;
     /* The line above makes the container centred within the page */
 }
@@ -111,7 +111,7 @@ header {
     position: relative; /* <-- needed so .icon anchors to the header, not the page */
     max-width: 1200px;
     margin: 0 auto;
-    background-color: var(--header-background);
+    background-image: var(--header-background);
     padding: 2rem 0 2rem 2rem;
     min-height: 7rem;
 }
@@ -140,7 +140,7 @@ header {
 }
 
 .topnav a {
-    color: #000;
+    color: #f6ead0;
     text-decoration: none;
     font-size: 1.15rem;
 }
@@ -163,7 +163,7 @@ header {
     outline: none;
     cursor: pointer;
     padding: 0;
-    color: #000;
+    color: #f6ead0;
     font-size: 2rem;
 }
 
@@ -219,7 +219,6 @@ header {
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 .introduction {
-    background-color: var(--intro-background);
     padding: 2rem;
 }
 
@@ -284,7 +283,8 @@ header {
 }
 
 .carousel-cell {
-    width: 100%;
+    background-image: url("images/buttonshort.svg")
+    width: 80%;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -306,9 +306,9 @@ header {
 /* This 'portrait' class is a container for the text and images */
 .portrait {
     text-align: center;
-    background-color: var(--portrait-background);
-    border-radius: .4rem;
-    padding: 2rem 2rem 1.4rem 2rem;
+    background-image: var(--portrait-background);
+    border-radius: 1rem;
+    padding: 3rem 1.5rem 5rem 1.5rem;
     transition: box-shadow .3s;
     text-decoration: none;
 }
@@ -325,14 +325,14 @@ header {
     color: var(--cream-text);
     font-weight: 400;
     margin-top: .8rem;
-    margin-bottom: .4rem;
+    margin-bottom: .1rem;
 }
 
 .portrait__description {
     color: var(--cream-text);
     font-weight: 400;
     font-size: .7rem;
-    margin-bottom: 1rem;
+    margin-bottom: .7rem;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -347,16 +347,16 @@ header {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr));
         gap: 1rem;
-        margin: 1rem;
+        margin: 2rem;
     }
 }
 
 /* This 'landscape' class is a container for the text and images */
 .landscape {
     text-align: center;
-    background-color: var(--landscape-background);
+    background-image: var(--landscape-background);
     border-radius: .4rem;
-    padding: 2rem 2rem 1.4rem 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     transition: box-shadow .3s;
     text-decoration: none;
 }
