@@ -1,6 +1,6 @@
 /*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-  Author: Ehren van Strik - Taylor
+  Author: Pip Squeak
   Date: September 2026
 
   CONTENTS:
@@ -28,25 +28,24 @@
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 :root {
-    --dark-text: #f6ead0;
-    --light-text: #fcfcfa;
+
     --cream-text: #f6ead0;
-    --medium-dark-text: #f6ead0;
+    
     --main-background: url("images/background.svg");
     --header-background: url("images/header.png");
-    --intro-background: #f6ead0;
-    --dark-background: #f6ead0;
-    --portrait-background: url("images/button.svg");
+    --intro-background: #ff7dc9;
+    --dark-background: #ff7dc9;
+    --portrait-background: url("images/assetborder.png");
     --landscape-background: url("images/buttonshort.svg");
-    --dark-border-colour: #f6ead0;
-    --button-colour: #f6ead0;
-    --dark-green: #f6ead0;
+    --dark-border-colour: #ff7dc9;
+    --button-colour: #ff7dc9;
+    --dark-green: #ff7dc9;
     --slide-out-menu-background: rgba(233, 240, 234, 0.93);
-    --footer-background: #73645C;
-    --off-white: #fcfcf5;
-    --description-text: #f6ead0;
+    --footer-background: url("images/footer.png");
+    --off-white: #f6ead0;
+    --description-text: #ff7dc9;
     --description-text-colour: #fcfcfa;
-    --light-silver: #fcfcfa;
+    --light-silver: #ff7dc9;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
@@ -55,15 +54,16 @@
   
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
+
 body {
-    font-family:  'Space Grotesk', sans-serif;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Chango", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: #f6ead0;
     font-size: 1.2rem;
-    background-image: url("images/border.svg");
+    background-image: url("images/border.png");
+    background-size: 100%;
 }
 
 img {
@@ -107,17 +107,26 @@ main {
   
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
+
+
 header {
     position: relative; /* <-- needed so .icon anchors to the header, not the page */
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #ff7dc9;
     background-image: var(--header-background);
-    padding: 2rem 0 2rem 2rem;
-    min-height: 7rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 10rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 header h1 {
-    color: var(--dark-text);
+    justify-content: center;
+    color: var(--cream-text);
     font-weight: 600;
 }
 
@@ -134,9 +143,8 @@ header {
 .topnav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     gap: 0.5rem 2rem;
-    width: 100%;
 }
 
 .topnav a {
@@ -170,8 +178,8 @@ header {
 /* First breakpoint */
 @media screen and (max-width: 600px) {
     header {
-        padding: 2rem 0 2rem 1rem;
-        min-height: 4rem;
+        padding: 1rem 0 2rem 1rem;
+        max-height: 10rem;
     }
 
     .topnav a {
@@ -192,12 +200,16 @@ header {
         width: 40vw;
         margin-top: 0;
         padding: 6rem 2rem 4rem 2rem;
-        background-color: beige;
+        background-image: url("images/menu.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-width: 15rem;
     }
 
     .topnav.responsive a {
         display: block;
-        text-align: right;
+        justify-content: space-evenly;
+        
     }
 }
 
@@ -220,48 +232,24 @@ header {
 
 .introduction {
     padding: 2rem;
+    
 }
 
 .introduction h2 {
-    color: var(--dark-text);
+    color: var(--cream-text);
     font-weight: 400;
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    margin-left: 500px;
+    margin-left: 2rem;
+    display: flex;
 }
 
 .introduction p {
-    color: var(--dark-text);
+    color: var(--cream-text);
     font-weight: 300;
     font-size: 1rem;
     margin-bottom: 1rem;
-    margin-left: 500px;
-}
-
-.readmore-button {
-    background-color: var(--button-colour);
-    border: none;
-    color: var(--off-white);
-    padding: 7px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    margin-top: 1rem;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-    transition: all .3s;
-    border-radius: 5px;
-}
-
-.readmore-button:hover {
-    background-color: var(--button-colour);
-    color: var(--cream-text);
-    box-shadow: none;
-}
-
-.readmore-button:active {
-    box-shadow: inset 0 2px 15px rgba(0, 0, 0, .3);
+    margin-left: 2rem;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -270,21 +258,32 @@ header {
   
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
+.carousel-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.main-carousel, .main-carousel img {
+    width: 604px;
+    height: 604px;
+}
+
+.flickity-viewport {
+    height: 604px !important;
+}
 .carousel-section .caption {
-    background: #FAFAFA;
+    background: #ff7dc9;    
     margin: 0;
+    width: 604px;
     padding: 10px;
     text-align: center;
-    color: #524d49;
+    color: #f6ead0;
     font-size: .8rem;
     font-weight: 200;
     font-family: var(--typeface-open-sans);
     font-style: italic;
-}
-
-.carousel-cell {
-    background-image: url("images/buttonshort.svg")
-    width: 80%;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -307,18 +306,24 @@ header {
 .portrait {
     text-align: center;
     background-image: var(--portrait-background);
-    border-radius: 1rem;
-    padding: 3rem 1.5rem 5rem 1.5rem;
-    transition: box-shadow .3s;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    border-radius: 1rem 1rem 0rem 1rem;
+    padding: 3rem 2rem 7rem 2rem;
+    transition: 1s;
     text-decoration: none;
 }
 
 .portrait:hover {
-    box-shadow: rgba(50, 50, 93, 0.5) 0px 13px 27px -5px, rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+    transform: scale(0.8);
 }
 
 .portrait__image {
     width: 100%;
+    padding: 0rem .5rem 0rem .5rem;
+    position: center;
 }
 
 .portrait__name {
@@ -326,13 +331,15 @@ header {
     font-weight: 400;
     margin-top: .8rem;
     margin-bottom: .1rem;
+    padding: 0rem .5rem 0rem .5rem;
 }
 
 .portrait__description {
     color: var(--cream-text);
-    font-weight: 400;
+    font-weight: 300;
     font-size: .7rem;
     margin-bottom: .7rem;
+    padding: 0rem .5rem 0rem .5rem;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -354,7 +361,7 @@ header {
 /* This 'landscape' class is a container for the text and images */
 .landscape {
     text-align: center;
-    background-image: var(--landscape-background);
+    background-image: var(--portrait-background);
     border-radius: .4rem;
     padding: 2rem 2rem 1rem 2rem;
     transition: box-shadow .3s;
@@ -362,7 +369,7 @@ header {
 }
 
 .landscape:hover {
-    box-shadow: rgba(50, 50, 93, 0.5) 0px 13px 27px -5px, rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+    transform: scale(0.8);
 }
 
 .landscape__image {
@@ -463,7 +470,7 @@ header {
 
 .single-item__h2 {
     grid-area: single-item__h2;
-    color: var(--dark-text);
+    color: var(--cream-text);
     font-weight: 400;
     font-size: 2.6rem;
 }
@@ -516,7 +523,7 @@ header {
 
 /* This 'Next' button below is unused at the moment. Where might you use this in your web page? */
 .next-button {
-    background-color: var(--dark-text);
+    background-color: var(--cream-text);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -534,7 +541,7 @@ header {
 }
 
 .next-button:hover {
-    background-color: var(--dark-text);
+    background-color: var(--cream-text);
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -599,7 +606,7 @@ header {
 
 .contact-form__heading {
     grid-area: contact-heading;
-    color: var(--dark-text);
+    color: var(--cream-text);
     font-weight: 400;
     font-size: 2.6rem;
 }
@@ -610,7 +617,7 @@ header {
 
 .contact-form h3,
 .contact-form p {
-    color: var(--dark-text);
+    color: var(--cream-text);
     font-weight: 500;
 }
 
@@ -647,7 +654,7 @@ header {
     padding: 0 1.4rem;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
     background-color: var(--light-silver);
-    color: var(--dark-text);
+    color: var(--cream-text);
 }
 
 .contact-form .contact-form__message textarea {
@@ -696,8 +703,12 @@ header {
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 footer {
-    background-color: var(--footer-background);
-    padding: 2rem;
+    background-color: #ff7dc9;
+    background-image: var(--footer-background);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 10rem;
+    padding: 5rem;
     color: var(--off-white);
 }
 
